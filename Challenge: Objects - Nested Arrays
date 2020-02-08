@@ -1,0 +1,9 @@
+const nestedArr = [];
+// ADD CODE HERE
+for(let i = 0; i < 5; i++) {
+  nestedArr.push([`loop${i}`, i]);
+}
+
+console.log(nestedArr);
+
+// [['loop0', 0], ['loop1', 1], ['loop2', 2], ['loop3', 3], ['loop4', 4]]
