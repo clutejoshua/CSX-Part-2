@@ -1,0 +1,26 @@
+const fb = [];
+// ADD CODE HERE
+
+// loop through the number 1 through 16
+for (let i = 1; i <= 16; i++) {
+// check if i number is divisble by 5 && 3
+  if (i % 5 === 0 && i % 3 === 0) {
+  // if it is push the string 'fizzbuzz' to fb
+    fb.push('fizzbuzz');
+    // check if i is divisble by 3
+  } else if (i % 3 === 0) {
+      // if it is push the string 'fizz' to fb
+    fb.push('fizz');
+    // check if i is divisble by 5
+  } else if (i % 5 === 0) {
+      // if it is push the string 'buzz' to fb
+    fb.push('buzz');
+    // otherwise
+  } else {
+     // push the number to fb
+    fb.push(i);
+  }
+}
+
+console.log(fb);
+// should log: [1, 2, 'fizz', 4, 'buzz', 'fizz', 7, 8, 'fizz', 'buzz', 11, 'fizz', 13, 14, 'fizzbuzz', 16]
